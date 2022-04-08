@@ -131,3 +131,6 @@ dmypy.json
 # Mac OS things
 .DS_Store
 .vscode/
+
+# Data folder
+data/
