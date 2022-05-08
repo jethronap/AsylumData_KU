@@ -134,3 +134,6 @@ dmypy.json
 
 # Data folder
 data/
+
+# Tests folder
+tests/
