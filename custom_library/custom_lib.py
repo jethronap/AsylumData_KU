@@ -195,7 +195,7 @@ def wordcloud_topics (model, features, no_top_words=40):
         largest = words.argsort()[::-1] # inverts order
         for i in range(0, no_top_words):
             size[features[largest[i]]] = abs(words[largest[i]])
-        wc = WordCloud(background_color="white", max_words=100, width=960, height=540)
+        wc = WordCloud(background_color="black", max_words=100, width=960, height=540)
         wc.generate_from_frequencies(size)
         plt.figure(figsize=(12,12))
         plt.imshow(wc, interpolation='bilinear')
