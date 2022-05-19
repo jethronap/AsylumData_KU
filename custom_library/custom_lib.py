@@ -200,3 +200,17 @@ def wordcloud_topics (model, features, no_top_words=40):
         plt.figure(figsize=(12,12))
         plt.imshow(wc, interpolation='bilinear')
         plt.axis('off')
+
+# Utility function to visualise wordclouds for Kmeans topic modelling
+def wordcloud_clusters(model, vectors, features, no_top_words=40):
+    for cluster in np.unique(model.labels_):
+        size = {}
+        words = vectors[model.labels_ == cluster].sum(axis=0).A[0]
+        largest = words.argsort()[::-1] # invert sort order
+        for i in range(0, no_top_words):
+            size[features[largest[i]]] = abs(words[largest[i]])
+        wc = WordCloud(background_color="black", max_words=100, width=960, height=540)
+        wc.generate_from_frequencies(size)
+        plt.figure(figsize=(12,12))
+        plt.imshow(wc, interpolation='bilinear')
+        plt.axis("off")
