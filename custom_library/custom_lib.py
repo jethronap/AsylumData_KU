@@ -22,7 +22,7 @@ def import_dataset(encoding=None):
     """
     Imports dataset in json format.
     """
-    file = glob.glob('data/*.json')
+    file = glob.glob('data/*_06.json')
     file = ' '.join(file)
     with open(file, encoding='utf-8') as inputfile:
         df = pd.read_json(inputfile)
