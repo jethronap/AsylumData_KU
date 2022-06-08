@@ -133,7 +133,7 @@ Its default is set to 2 to cut down on tokens occurring only once.
     return freq_df.sort_values('freq', ascending=False)
 
 
-def kwic(doc_series, keyword, window=50, print_samples=5):
+def kwic(doc_series, keyword, window=100, print_samples=5):
     """
 The function iteratively collects the keyword contexts by applying the add_kwic function to each document with map. 
 By default, the function returns a list of tuples of the form (left context, keyword, right context). 
