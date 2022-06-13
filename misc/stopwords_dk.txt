@@ -261,6 +261,7 @@ være
 været
 øvrigt
 ansøger
+ansøgerens
 ævnet
 nævnet
 nævnets
