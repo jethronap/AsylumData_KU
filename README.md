@@ -2,7 +2,7 @@
 
 This repository contains the source code for the analysis of data from the Danish Refugee Appeals Board (Flygtningenævnet). The data are case summaries in textual format and are publicly available from https://fln.dk/praksis.
 
-The source code for the steps of the analysis is included in each jupyter notebook. Notebooks starting with `UH` refer to cases denoted as Unkown Homeland. `ALL` is used for all other cases.
+The source code for the steps of the analysis is included in each jupyter notebook. Notebooks starting with `UH` refer to cases denoted as Unknown Homeland. `ALL` is used for all other cases.
 
 ## Running the notebooks:
 
@@ -14,7 +14,7 @@ pip install - r requirements_(respective name).txt
 
 The previous command will install the appropriate dependencies for each notebook. 
 
-However please run first:
+However, please run first:
 
 ```
 pip install - r requirements_utilities.txt
