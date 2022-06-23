@@ -8,13 +8,13 @@ The source code for the steps of the analysis is included in each jupyter notebo
 
 Before running the notebooks please `cd` into the `requirements` then
 
-> `pip install - r requirements_(respective name).txt`
+> pip install - r requirements_(respective name).txt
 
 This will install the appropriate dependencies for each notebook. 
 
 Please run first:
 
-> `pip install - r requirements_utilities.txt`
+> pip install - r requirements_utilities.txt
 
 This will install all dependencies used in the helpers functions found [in this subdirectory](https://github.com/jethronap/AsylumData_KU/tree/main/utilities).
 
