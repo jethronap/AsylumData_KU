@@ -9,7 +9,7 @@ The source code for the steps of the analysis is included in each jupyter notebo
 Before running the notebooks please `cd` into the `requirements` then
 
 ```
-pip install - r requirements_(respective name).txt
+pip install - r requirements_(respective notebook name).txt
 ```
 
 The previous command will install the appropriate dependencies for each notebook. 
